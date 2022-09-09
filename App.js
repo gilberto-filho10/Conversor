@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import {  StyleSheet, View, Text} from 'react-native';
+import Conversor from "./src/conversor";
 
 class App extends Component {
   render(){
     return(
-      <View>
-        <Text>
-          <Conversor/>
-        </Text>
+      <View style={styles.container}>
+        <Conversor moedaA='USD' moedaB='BRL'/>
+        {/* <Conversor moedaA='USD' moedaB='BRL'/> */}
       </View>
     );
   }
